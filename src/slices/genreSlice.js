@@ -1,38 +1,37 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const initialState = {
   data: [],
-  input: ""
-}
+  input: '',
+};
 
-const API_URL = "https://api.jikan.moe/v4/genres/anime";
+const API_URL = 'https://api.jikan.moe/v4/genres/anime';
 
-export const fetchData = createAsyncThunk("genre/fetchData", async () => {
+export const fetchData = createAsyncThunk('genre/fetchData', async () => {
   try {
     const response = await axios.get(API_URL);
-    console.log(response.data);
     return response.data;
-  } catch(err) {
+  } catch (err) {
     return err.message;
   }
-})
+});
 
 const genreSlice = createSlice({
-  name: "genre",
+  name: 'genre',
   initialState,
   reducers: {
     filter: (state, { payload }) => {
       state.input = payload;
-    }
+    },
   },
   extraReducers: (builder) => {
     builder
-    .addCase(fetchData.fulfilled, (state, { payload }) => {
-      state.data = payload.data;
-    });
-  }
-})
+      .addCase(fetchData.fulfilled, (state, { payload }) => {
+        state.data = payload.data;
+      });
+  },
+});
 
 export const { filter } = genreSlice.actions;
 export default genreSlice.reducer;

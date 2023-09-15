@@ -1,6 +1,10 @@
 :root {
   --color1: #da4580;
   --color2: #d04379;
+  --color3: #e671a0;
+  --header-top-height: 6rem;
+  --header-bottom-height: 3rem;
+  --header-height: calc(var(--header-top-height) + var(--header-bottom-height));
 }
 
 *,
@@ -40,4 +44,5 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  position: relative;
 }

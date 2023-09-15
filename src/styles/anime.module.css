@@ -1,5 +1,5 @@
 .list {
-  margin-top: 6rem;
+  margin-top: var(--header-height);
   display: flex;
   flex-direction: column;
 }
@@ -8,11 +8,11 @@
   display: flex;
   flex-direction: column;
   color: white;
-  background-color: var(--color1);
+  background-color: var(--color2);
 }
 
 .item:nth-child(odd) {
-  background-color: var(--color2);
+  background-color: var(--color1);
 }
 
 .title {
@@ -30,8 +30,19 @@
   padding: 0.4rem;
 }
 
-.info:hover {
+.infoButtons {
+  border-radius: 0.4rem;
+  border: none;
+  background-color: var(--color3);
+  padding: 1rem;
+  width: 10rem;
+  align-self: center;
+  color: white;
+}
+
+.infoButtons:hover {
   cursor: pointer;
+  opacity: 0.6;
 }
 
 .item img {
@@ -44,36 +55,73 @@
   align-items: center;
 }
 
+.back {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.back:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
 .options {
   display: flex;
   flex-wrap: wrap;
   overflow-x: auto;
   overflow-y: hidden;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0.6rem;
+  padding: 0 1rem;
+  color: white;
 }
 
 .number,
 .current {
-  background-color: deepskyblue;
+  background-color: var(--color3);
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   color: white;
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .number {
-  border: transparent;
+  border: none;
 }
 
 .current {
-  border: solid slategray;
+  border: solid white;
 }
 
 .number:hover,
 .current:hover {
   cursor: pointer;
+}
+
+.arrows {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.arrows:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  font-size: 3rem;
 }
 
 @media only screen and (min-width: 750px) {
