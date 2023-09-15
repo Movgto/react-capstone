@@ -7,16 +7,15 @@ import Style from '../styles/anime.module.css';
 import AnimeItem from './AnimeItem';
 
 const Anime = () => {
-  const { data } = useSelector((state) => state.search);
+  const { data, loading, error } = useSelector((state) => state.search);
   const dispatch = useDispatch();
   const { id } = useParams();
   const [page, setPage] = useState(1);
-  const [loading, setLoading] = useState(true);
+  const [expanded, setExpanded] = useState(true);
 
   useEffect(() => {
     if (data.length <= 0) {
-      dispatch(byGenre({ id, page }))
-        .then(() => setLoading(false));
+      dispatch(byGenre({ id, page }));
     } // byGender parameters: id, page number
   }, [dispatch, data, id, page]);
 
@@ -65,9 +64,25 @@ const Anime = () => {
             <AnimeItem item={item} key={item.mal_id} />
           ))}
         </ul>
-        <div className={Style.options}>
+        <footer
+          className={
+            expanded
+              ? `${Style.options}`
+              : `${Style.options} ${Style.closed}`
+        }
+        >
+          <button
+            className={Style.expand}
+            onClick={() => setExpanded(!expanded)}
+            type="button"
+          >
+            {expanded
+              ? <i className="fa-solid fa-chevron-down" />
+              : <i className="fa-solid fa-chevron-up" />}
+          </button>
           <h3>
             Page
+            &nbsp;
             {page}
             /
             {data.pagination.last_visible_page}
@@ -115,11 +130,16 @@ const Anime = () => {
           {
             createNumButtons(page, data.pagination.last_visible_page)
           }
-        </div>
+        </footer>
       </>
     );
   }
-  return <h3>There was an error when receiving the data</h3>;
+
+  return (
+    <div className={Style.error}>
+      <h3>{error}</h3>
+    </div>
+  );
 };
 
 export default Anime;
