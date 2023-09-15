@@ -63,18 +63,17 @@
   font-weight: bold;
 }
 
-.number:hover,
-.current:hover {
-  cursor: pointer;
-}
-
 .number {
   border: transparent;
 }
 
-
 .current {
   border: solid slategray;
+}
+
+.number:hover,
+.current:hover {
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 750px) {
