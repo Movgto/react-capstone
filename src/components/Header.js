@@ -1,7 +1,8 @@
-import Style from '../styles/header.module.css'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import Style from '../styles/header.module.css';
 import { filter } from '../slices/genreSlice';
+import { cleanData } from '../slices/searchSlice';
 
 const Header = () => {
   const { input } = useSelector((state) => state.genre);
@@ -12,19 +13,26 @@ const Header = () => {
 
   const changeHandler = (text) => {
     dispatch(filter(text));
-    console.log(input);
-  }
+  };
 
-  if (location.pathname !== "/") {
+  const goBack = () => {
+    dispatch(cleanData());
+    nav('/');
+  };
+
+  if (location.pathname !== '/') {
     return (
       <header className={Style.header}>
         <div className={Style.headerTop}>
-          <button onClick={() => nav("/")}>
-            <i className="fa-solid fa-chevron-left"></i>
+          <button
+            onClick={() => goBack()}
+            type="button"
+          >
+            <i className="fa-solid fa-chevron-left" />
           </button>
           <div className={Style.options}>
-            <i className="fa-solid fa-microphone"></i>
-            <i className="fa-solid fa-gear"></i>
+            <i className="fa-solid fa-microphone" />
+            <i className="fa-solid fa-gear" />
           </div>
         </div>
         <div className={Style.headerBottom}>
@@ -36,14 +44,16 @@ const Header = () => {
   return (
     <header className={Style.header}>
       <div className={Style.headerTop}>
-        <i className="fa-solid fa-chevron-left"></i>
-        <input type="text"
+        <i className="fa-solid fa-chevron-left" />
+        <input
+          type="text"
           placeholder="Filter categories by name"
           value={input}
-          onChange={(e) => changeHandler(e.target.value)} />
+          onChange={(e) => changeHandler(e.target.value)}
+        />
         <div className={Style.options}>
-          <i className="fa-solid fa-microphone"></i>
-          <i className="fa-solid fa-gear"></i>
+          <i className="fa-solid fa-microphone" />
+          <i className="fa-solid fa-gear" />
         </div>
       </div>
       <div className={Style.headerBottom}>
