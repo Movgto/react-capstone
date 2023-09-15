@@ -9,9 +9,9 @@ const AnimeItem = ({ item }) => {
     <li className={Style.item}>
       <h3 className={Style.title}>{item.title}</h3>
       <div className={Style.image}>
-        <img 
-        src={item.images.jpg.image_url}
-        alt="Anime cover image" />
+        <img
+          src={item.images.jpg.image_url}
+          alt="Anime cover" />
       </div>
       <div className={Style.info}>
         {
@@ -19,8 +19,12 @@ const AnimeItem = ({ item }) => {
             (
               <>
                 <p>{item.synopsis}</p>
-                <button onClick={() => setInfoToggle(!infoToggle)}
-                  type="button">Back</button>
+                <button
+                  onClick={() => setInfoToggle(!infoToggle)}
+                  type="button"
+                  className={Style.back}>
+                  <i class="fa-solid fa-reply"></i>
+                </button>
               </>
             )
             : trailerToggle ?
@@ -34,8 +38,12 @@ const AnimeItem = ({ item }) => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                   </iframe>
-                  <button onClick={() => setTrailerToggle(!trailerToggle)}
-                    type="button">Back</button>
+                  <button
+                    onClick={() => setTrailerToggle(!trailerToggle)}
+                    type="button"
+                    className={Style.back}>
+                    <i class="fa-solid fa-reply"></i>
+                  </button>
                 </>
               )
               :
@@ -47,10 +55,14 @@ const AnimeItem = ({ item }) => {
                   <h3>{`Episodes: ${item.episodes ? item.episodes : "Not found"}`}</h3>
                   <h3>{`Rating: ${item.rating ? item.rating : "Not found"}`}</h3>
                   <h3>{`Status: ${item.status ? item.status : "Not found"}`}</h3>
-                  <button onClick={() => setInfoToggle(!infoToggle)}
-                    type="button">Synopsis</button>
-                  <button onClick={() => setTrailerToggle(!trailerToggle)}
-                    type="button">Trailer</button>
+                  <button
+                  onClick={() => setInfoToggle(!infoToggle)}
+                  type="button"
+                  className={Style.infoButtons}>Synopsis</button>
+                  <button
+                  onClick={() => setTrailerToggle(!trailerToggle)}
+                  type="button"
+                  className={Style.infoButtons}>Trailer</button>
                 </>
               )
 

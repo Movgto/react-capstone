@@ -34,7 +34,7 @@ const Home = () => {
   return (
     <>
       <ul className={Style.list}>
-        {function() {
+        {function () {
 
           let evenCount = 0;
           let oddCount = 0;
@@ -80,9 +80,14 @@ const Home = () => {
             return (
               <li className={`${Style.item} ${evenNOdds()}`}
                 onClick={() => handleClick(item.mal_id, item.name)}>
-                {item.name.split("")
-                  .map((char) => char.toUpperCase())
-                  .join("")}
+                <h3>
+                  {item.name.split("")
+                    .map((char) => char.toUpperCase())
+                    .join("")}
+                </h3>
+                <div className={Style.enter}>
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </div>
               </li>);
           }));
         }()

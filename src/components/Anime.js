@@ -48,7 +48,11 @@ const Anime = () => {
   };
 
   if (loading) {
-    return (<div className={Style.list}><h3>Loading...</h3></div>);
+    return (
+      <div className={Style.loading}>
+        <i class="fa-solid fa-spinner fa-spin"></i>
+      </div>
+    );
   }
   if (data.data) {
     return (
@@ -59,13 +63,23 @@ const Anime = () => {
           ))}
         </ul>
         <div className={Style.options}>
-          <button onClick={() => changePage(id, 1)}>First</button>
+          <h3>Page {page}/{data.pagination.last_visible_page}</h3>
           {page > 1 &&
-            <button onClick={() => changePage(id, page - 1)}>Previous</button>}
-          <h3>Page {page}</h3>
+            <button className={Style.arrows} onClick={() => changePage(id, 1)}>
+              <i className="fa-solid fa-backward-step"></i>
+            </button>}
+          {page > 1 &&
+            <button className={Style.arrows} onClick={() => changePage(id, page - 1)}>
+              <i className="fa-solid fa-backward"></i>
+            </button>}
           {page < Number(data.pagination.last_visible_page) &&
-            <button onClick={() => changePage(id, page + 1)}>Next</button>}
-          <button onClick={() => changePage(id, data.pagination.last_visible_page)}>Last</button>
+            <button className={Style.arrows} onClick={() => changePage(id, page + 1)}>
+              <i className="fa-solid fa-forward"></i>
+            </button>}
+          {page < Number(data.pagination.last_visible_page) &&
+            <button className={Style.arrows} onClick={() => changePage(id, data.pagination.last_visible_page)}>
+              <i className="fa-solid fa-forward-step"></i>
+            </button>}
           {
             createNumButtons(page, data.pagination.last_visible_page)
           }
