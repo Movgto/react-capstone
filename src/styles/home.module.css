@@ -1,0 +1,48 @@
+.list {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+}
+
+.item {
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: var(--color2);
+  color: white;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+.even {
+  background-color: var(--color2);
+}
+
+.evenEven {
+  background-color: var(--color1);
+}
+
+.odd {
+  background-color: var(--color1);
+}
+
+.oddEven {
+  background-color: var(--color2);
+}
+
+@media only screen and (min-width: 750px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .item {
+    height: 10rem;
+  }
+}
