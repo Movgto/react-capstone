@@ -68,14 +68,35 @@
 }
 
 .options {
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: visible;
+  justify-content: center;
   align-items: center;
   gap: 0.6rem;
-  padding: 0 1rem;
+  padding: 0.5rem;
   color: white;
+  bottom: 0;
+  background-color: var(--color2);
+  width: 100%;
+  height: max-content;
+  box-shadow: 0 1rem 2rem 1rem #2b1c2266;
+}
+
+.closed {
+  height: 0;
+  padding: 0 0.5rem;
+}
+
+.expand {
+  position: absolute;
+  top: -1.5rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 100%;
 }
 
 .number,
@@ -122,6 +143,16 @@
   height: 100vh;
   color: white;
   font-size: 3rem;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: rgb(74, 10, 10);
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 750px) {

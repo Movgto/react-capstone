@@ -4,16 +4,17 @@ import axios from 'axios';
 const initialState = {
   data: [],
   current: null,
+  loading: true,
   error: null,
 };
 
-export const byGenre = createAsyncThunk('search/byGenre', async ({ id, page }) => {
+export const byGenre = createAsyncThunk('search/byGenre', async ({ id, page }, { rejectWithValue }) => {
   try {
     const API_URL = `https://api.jikan.moe/v4/anime?genres=${id}&page=${page}`;
     const response = await axios.get(API_URL);
     return response.data;
   } catch (err) {
-    return err.message;
+    return rejectWithValue(err.message);
   }
 });
 
@@ -31,7 +32,15 @@ const searchSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(byGenre.fulfilled, (state, { payload }) => {
+        state.loading = false;
         state.data = payload;
+      })
+      .addCase(byGenre.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(byGenre.rejected, (state, { payload }) => {
+        state.loading = false;
+        state.error = payload;
       });
   },
 });
