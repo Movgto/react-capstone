@@ -41,6 +41,9 @@ Also config linters for (`CSS3` / `JavaScript`) in the `.github` folder.
 📌 **Live Demo:**
 - See the project live from [here](https://the-animepedia.onrender.com/).
 
+📌 **Presentation video:**
+- See my presentation of the project [here](https://www.loom.com/share/cab21217dca54430868f46753841124d?sid=0d0b543b-257c-434a-8bd5-8b4f8709e7a8)
+
 📌 **Tech Stack:**
 - Framework used is `ReactJS`
 - State management by `Redux Toolkit`
@@ -149,7 +152,7 @@ Like this project? Show your support by starring!
 
 # 🙏🏻 Acknowledgements
 
-I thank everyone at **Microverse** for guiding me through this project.
+I thank everyone at **Microverse** for guiding me through this project. And also I want to give credit to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio), who is the designer of the template used as a guideline for this project.
 
 <p align="right"><a href="#title">back to top</a></p>
 
