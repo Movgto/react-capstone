@@ -59,7 +59,10 @@ const Anime = () => {
   if (data.data) {
     return (
       <>
-        <ul className={Style.list}>
+        <ul
+          className={Style.list}
+          data-testid="list"
+        >
           {data.data.map((item) => (
             <AnimeItem item={item} key={item.mal_id} />
           ))}

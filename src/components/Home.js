@@ -4,9 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import { fetchData } from '../slices/genreSlice';
 import Style from '../styles/home.module.css';
 import { setGenre } from '../slices/searchSlice';
+import AnimStyle from '../styles/anime.module.css';
 
 const Home = () => {
-  const { data, input } = useSelector((state) => state.genre);
+  const { data, input, loading } = useSelector((state) => state.genre);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -87,9 +88,20 @@ const Home = () => {
     }));
   };
 
+  if (loading) {
+    return (
+      <div className={AnimStyle.loading}>
+        <i className="fa-solid fa-spinner fa-spin" />
+      </div>
+    );
+  }
+
   return (
     <>
-      <ul className={Style.list}>
+      <ul
+        className={Style.list}
+        data-testid="list"
+      >
         {list()}
       </ul>
     </>
