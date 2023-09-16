@@ -4,6 +4,7 @@ import axios from 'axios';
 const initialState = {
   data: [],
   input: '',
+  loading: true,
 };
 
 const API_URL = 'https://api.jikan.moe/v4/genres/anime';
@@ -28,7 +29,11 @@ const genreSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchData.fulfilled, (state, { payload }) => {
+        state.loading = false;
         state.data = payload.data;
+      })
+      .addCase(fetchData.pending, (state) => {
+        state.loading = true;
       });
   },
 });

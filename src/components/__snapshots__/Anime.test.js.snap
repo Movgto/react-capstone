@@ -1,0 +1,1073 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Anime component matches the snapshot 1`] = `
+<ul
+  class="list"
+  data-testid="list"
+>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        ACTION
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        ADVENTURE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        AVANT GARDE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        AWARD WINNING
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        BOYS LOVE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        COMEDY
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        DRAMA
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        FANTASY
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        GIRLS LOVE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        GOURMET
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        HORROR
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        MYSTERY
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        ROMANCE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SCI-FI
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SLICE OF LIFE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SPORTS
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SUPERNATURAL
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SUSPENSE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        ECCHI
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        EROTICA
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        HENTAI
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        ADULT CAST
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        ANTHROPOMORPHIC
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        CGDCT
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        CHILDCARE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        COMBAT SPORTS
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        CROSSDRESSING
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        DELINQUENTS
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        DETECTIVE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        EDUCATIONAL
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        GAG HUMOR
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        GORE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        HAREM
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        HIGH STAKES GAME
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        HISTORICAL
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        IDOLS (FEMALE)
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        IDOLS (MALE)
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        ISEKAI
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        IYASHIKEI
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        LOVE POLYGON
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        MAGICAL SEX SHIFT
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        MAHOU SHOUJO
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        MARTIAL ARTS
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        MECHA
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        MEDICAL
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        MILITARY
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        MUSIC
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        MYTHOLOGY
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        ORGANIZED CRIME
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        OTAKU CULTURE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        PARODY
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        PERFORMING ARTS
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        PETS
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        PSYCHOLOGICAL
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        RACING
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        REINCARNATION
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        REVERSE HAREM
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        ROMANTIC SUBTEXT
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SAMURAI
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SCHOOL
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SHOWBIZ
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SPACE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        STRATEGY GAME
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SUPER POWER
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SURVIVAL
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        TEAM SPORTS
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        TIME TRAVEL
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        VAMPIRE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        VIDEO GAME
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        VISUAL ARTS
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        WORKPLACE
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        JOSEI
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        KIDS
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SEINEN
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item even evenEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SHOUJO
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+  <li
+    class="item odd oddEven"
+  >
+    <button
+      type="button"
+    >
+      <h3>
+        SHOUNEN
+      </h3>
+      <i
+        class="fa-solid fa-arrow-right-to-bracket enter"
+      />
+    </button>
+  </li>
+</ul>
+`;
