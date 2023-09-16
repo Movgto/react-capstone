@@ -2,9 +2,9 @@
 
 <!-- TITLE -->
 
-# 🏷️ Space Travelers Hub
+# 🏷️ The Animepedia
 
-This is the sixth project of the third module in the **Microverse** program.
+This is the **Capstone** project of the third module in the **Microverse** program.
 <br/>
 Check the below contents for further details about this project.
 
