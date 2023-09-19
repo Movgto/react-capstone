@@ -1,70 +1,167 @@
-# Getting Started with Create React App
+<a name="title"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- TITLE -->
 
-## Available Scripts
+# 🏷️ The Animepedia
 
-In the project directory, you can run:
+This is the **Capstone** project of the third module in the **Microverse** program.
+<br/>
+Check the below contents for further details about this project.
 
-### `npm start`
+<!-- CONTENTS -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 📗 Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Description](#description)
+- [Instructions](#instructions)
+- [Authors](#authors)
+- [Future](#future)
+- [Contributions](#contributions)
+- [Support](#support)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
 
-### `npm test`
+<!-- DESCRIPTION -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a name="description"></a>
 
-### `npm run build`
+# 📖 Description
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is a simple application for viewing anime shows information built with `ReactJS` framework.
+It applies `Components` and `Hooks` along with `GitFlow` workflow.
+State management is implemeneted using `Redux` & `Redux Toolkit`.
+External data fetching is done with `Thunk` api & `Axios`.
+Navigation inside the app is implemented using `React Router`.
+Styling inside the project is done with `CSS Modules`.
+Unit testing is handles with `Jest` framework.
+All project dynamic files are contained in `src` directory while static assets are in `public` directory.
+The live build is generated inside the `build` directory.
+Also config linters for (`CSS3` / `JavaScript`) in the `.github` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📌 **Live Demo:**
+- See the project live from [here](https://the-animepedia.onrender.com/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📌 **Presentation video:**
+- See my presentation of the project [here](https://www.loom.com/share/cab21217dca54430868f46753841124d?sid=0d0b543b-257c-434a-8bd5-8b4f8709e7a8)
 
-### `npm run eject`
+📌 **Tech Stack:**
+- Framework used is `ReactJS`
+- State management by `Redux Toolkit`
+- Page structure is built with `JSX`
+- Styling is built with `CSS3`
+- Dynamic content is built with `ES6 JavaScript`
+- Bundling is done with `WebPack`
+- Data fetching is handled by `Axios`
+- Unit testing is perfomed with `React Testing Library`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📌 **Key Features:**
+- Single page app with all content loaded dynamically
+- Responsive layout with all screen sizes
+- Data list is persistent & fetched from remote server
+- Homepage displays anime categories that the user can choose by clicking on them, and also a text input is provided to filter genres by name.
+- After choosing a category another fetch request is done for that category, then, the anime shows details are displayed accordingly.
+- User can navigate through the list of animes, and see each of their title, year of creation, trailer, synopsis, and more.
+- A page navigation bar is displayed on the bottom of the Anime page, which can be closed and expanded again for a cleaner view.
+ 
+<p align="right"><a href="#title">back to top</a></p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- INSTRUCTIONS -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<a name="instructions"></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 🛠️ Instructions
 
-## Learn More
+You can easily download or fork this repository and work on it immadiately!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📌 **Prerequisites:**
+- `NodeJS` for installing & running all packages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📌 **Setup:**
+- Install all dependencies with `npm`
+```
+npm install
+```
+- For live development on `localhost:3000` run:
+```
+npm run start
+```
+- Unit testing is done with:
+```
+npm run test
+```
 
-### Code Splitting
+📌 **Deployment:**
+- You can deploy this project by uploading files in the `build` folder to a live server.
+- Create the distribution build using this command:
+```
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right"><a href="#title">back to top</a></p>
 
-### Analyzing the Bundle Size
+<!-- AUTHORS -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<a name="authors"></a>
 
-### Making a Progressive Web App
+# 👥 Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📌 **Gumaro:**
+- [GitHub](https://github.com/Movgto)
+- [LinkedIn](https://www.linkedin.com/in/gumaro-monroy-vazquez-1705aa165)
 
-### Advanced Configuration
+<p align="right"><a href="#title">back to top</a></p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- FUTURE -->
 
-### Deployment
+<a name="future"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# 🔭 Future
 
-### `npm run build` fails to minify
+Some additional features I may implement in the project:
+- Mock API fetching for tests, so they don't actually send requests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right"><a href="#title">back to top</a></p>
+
+<!-- CONTRIBUTIONS -->
+
+<a name="contributions"></a>
+
+# 🤝🏻 Contributions
+
+Wish to contribute to this project?
+<br/>
+Contributions, issues, and feature requests are more than welcome!
+<br/>
+Feel free to check the [issues](../../issues) page too.
+
+<p align="right"><a href="#title">back to top</a></p>
+
+<!-- SUPPORT -->
+
+<a name="support"></a>
+
+# ⭐️ Support
+
+Like this project? Show your support by starring!
+
+<p align="right"><a href="#title">back to top</a></p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+<a name="acknowledgements"></a>
+
+# 🙏🏻 Acknowledgements
+
+I thank everyone at **Microverse** for guiding me through this project. And also I want to give credit to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio), who is the designer of the template used as a guideline for this project.
+
+<p align="right"><a href="#title">back to top</a></p>
+
+<!-- LICENSE -->
+
+<a name="license"></a>
+
+# 📝 License
+
+This project is [MIT](LICENSE.md) licensed.
+
+<p align="right"><a href="#title">back to top</a></p>
